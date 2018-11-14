@@ -5,14 +5,15 @@ spring:
     cache: false
   cloud:
     consul:
-      enabled: false
+      enabled: true
+
 # Disable security configuration
 management:
   security:
     enabled: false
 endpoints:
   consul:
-    enabled: false
+    enabled: true
 
 server:
   port: 8080
@@ -24,4 +25,4 @@ logging:
 rest:
   consul:
     root:
-      uri: "http://localhost:8081"
+      uri: "http://person-service-client"

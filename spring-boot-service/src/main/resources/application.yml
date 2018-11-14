@@ -12,6 +12,17 @@ spring:
     console:
       enabled: true
       path: /console
+  cloud:
+    consul:
+      enabled: true
+
+# Disable security configuration
+management:
+  security:
+    enabled: false
+endpoints:
+  consul:
+    enabled: true
 
 # To use gorm you need this configuration at this level
 hibernate:
