@@ -22,6 +22,12 @@ First of all the project must to know were to find the `sources` for this we nee
 </build>
 ```
 
+## First build the project
+
+```
+$> mvn clean package
+```
+
 ## Run with docker-compose
 
 ```
