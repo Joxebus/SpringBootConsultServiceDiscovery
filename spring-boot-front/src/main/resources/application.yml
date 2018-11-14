@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: person-front
+  thymeleaf:
+    cache: false
+  cloud:
+    consul:
+      enabled: false
+# Disable security configuration
+management:
+  security:
+    enabled: false
+endpoints:
+  consul:
+    enabled: false
+
+server:
+  port: 8080
+
+logging:
+  config: classpath:log-config.xml
+
+# This is a configuration defined to setup the RestTemplate
+rest:
+  consul:
+    root:
+      uri: "http://localhost:8081"
