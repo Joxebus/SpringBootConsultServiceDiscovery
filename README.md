@@ -24,6 +24,7 @@ First of all the project must to know were to find the `sources` for this we nee
 ## Run instances
 
 ```
+$> mvn clean package
 $> java -jar spring-boot-front/target/person-front-0.1-SNAPSHOT.jar >> front.log &
 $> java -jar spring-boot-service/target/person-service-0.1-SNAPSHOT.jar >> service.log &
 ```
