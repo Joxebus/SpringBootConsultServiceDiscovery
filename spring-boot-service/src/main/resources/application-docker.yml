@@ -4,14 +4,10 @@ spring:
   thymeleaf:
     cache: false
   datasource:
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: ''
-    url: jdbc:h2:file:~/consul-example;AUTO_SERVER=TRUE
-  h2:
-    console:
-      enabled: true
-      path: /console
+    driver-class-name: com.mysql.jdbc.Driver
+    username: consul
+    password: example
+    url: jdbc:mysql://mysql:3306/consul-example?autoReconnect=true&useSSL=false
   cloud:
     consul:
       enabled: true
@@ -28,6 +24,7 @@ endpoints:
 hibernate:
   hbm2ddl:
     auto: update
+  dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 server:
   port: ${SERVER_PORT:8081}
