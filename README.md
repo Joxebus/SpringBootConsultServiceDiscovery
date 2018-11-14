@@ -22,32 +22,22 @@ First of all the project must to know were to find the `sources` for this we nee
 </build>
 ```
 
-## Run Consul with Docker
+## Run with docker-compose
 
 ```
-$> docker run -d --name=dev-consul -p 8500:8500/tcp -p 8300:8300/tcp -p 8301:8301/udp -p 8302:8302/udp -p 8600:8600/udp  -e CONSUL_BIND_INTERFACE=eth0 consul:latest
+$> docker-compose up --build
 ```
 
 Consul UI manager: http://localhost:8500/ui/dc1/services
 
-## Setup execution permission
-
-```
-$> chmod u+x run_nodes.sh
-$> chmod u+x stop_nodes.sh
-```
-
-## Run multiple instances
-
-```
-$> mvn clean package
-$> ./run_nodes.sh
-```
-
 Front App: http://localhost:8080/
 
-## Run single instance
+Service-1: http://localhost:8081/
+Service-2: http://localhost:8082/
+Service-3: http://localhost:8083/
 
-```
-$> java -jar spring-boot-service/target/person-service-0.1-SNAPSHOT.jar --server.port=8081 >> service1.txt &
-```
+## MySql
+
+- dbname: consul-example
+- user: consul
+- pass: example
