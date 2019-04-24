@@ -28,6 +28,7 @@ endpoints:
 hibernate:
   hbm2ddl:
     auto: update
+  dialect: org.hibernate.dialect.H2Dialect
 
 server:
   port: 8081
