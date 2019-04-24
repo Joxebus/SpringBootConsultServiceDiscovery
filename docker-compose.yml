@@ -21,7 +21,7 @@ services:
       - MYSQL_USER=consul
       - MYSQL_PASSWORD=example
     ports:
-    - "3306:3306"
+      - "3306:3306"
   front-1:
     build: ./spring-boot-front
     container_name: front
