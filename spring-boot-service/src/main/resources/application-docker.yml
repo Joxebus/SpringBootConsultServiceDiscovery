@@ -29,6 +29,9 @@ hibernate:
 server:
   port: ${SERVER_PORT:8081}
 
+logstash:
+  host: localhost
+
 logging:
   config: classpath:log-config.xml
 

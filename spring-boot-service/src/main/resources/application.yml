@@ -7,7 +7,7 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password: ''
-    url: jdbc:h2:file:~/consul-example;AUTO_SERVER=TRUE
+    url: jdbc:h2:file:~/consul-example
   h2:
     console:
       enabled: true
@@ -16,10 +16,6 @@ spring:
     consul:
       enabled: true
 
-# Disable security configuration
-management:
-  security:
-    enabled: false
 endpoints:
   consul:
     enabled: true
@@ -27,10 +23,13 @@ endpoints:
 # To use gorm you need this configuration at this level
 hibernate:
   hbm2ddl:
-    auto: update
+    auto: create-drop
 
 server:
   port: ${SERVER_PORT:8081}
+
+logstash:
+  host: localhost
 
 logging:
   config: classpath:log-config.xml

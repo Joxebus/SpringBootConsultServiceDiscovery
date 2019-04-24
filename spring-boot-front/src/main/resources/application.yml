@@ -18,8 +18,13 @@ endpoints:
 server:
   port: ${SERVER_PORT:8080}
 
+logstash:
+  host: localhost
+
 logging:
   config: classpath:log-config.xml
+  level:
+    org.thymeleaf: WARN
 
 # This is a configuration defined to setup the RestTemplate
 rest:

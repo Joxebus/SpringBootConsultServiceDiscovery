@@ -9,7 +9,13 @@
 - Java 8
 - Thymeleaf
 - Consul
+- ELK
 - Docker
+
+## Minimum Requirements
+
+- Docker with 4GB of memory and 1.5 of SWAP memory
+- Maven 3
 
 ## Groovy Sources
 
@@ -34,13 +40,12 @@ $> mvn clean package
 $> docker-compose up --build
 ```
 
-Consul UI manager: http://localhost:8500/ui/dc1/services
-
-Front App: http://localhost:8080/
-
-Service-1: http://localhost:8081/
-Service-2: http://localhost:8082/
-Service-3: http://localhost:8083/
+- Consul UI manager: `http://localhost:8500/ui/dc1/services`
+- Kibana UI manager: `http://localhost:5601/app/kibana`
+- Front App: `http://localhost:8080/`
+- Service-1: `http://localhost:8081/`
+- Service-2: `http://localhost:8082/`
+- Service-3: `http://localhost:8083/`
 
 ## MySql
 
