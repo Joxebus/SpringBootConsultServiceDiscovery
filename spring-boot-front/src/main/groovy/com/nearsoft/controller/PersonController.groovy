@@ -62,7 +62,7 @@ class PersonController {
             if(response.statusCode == HttpStatus.OK){
                 redirAttrs.addFlashAttribute("message", "Successfuly added ${response.body.name}")
                 return 'redirect:/people/'
-            } else{
+            } else {
                 model.addAttribute("person", response.body)
                 model.addAttribute("error", "Verify your information")
                 return 'person/create'

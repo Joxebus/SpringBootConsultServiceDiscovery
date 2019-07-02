@@ -17,7 +17,7 @@ class PersonController {
     @Autowired
     PersonService personService
 
-    @CrossOrigin(origins = "http://localhost:8989")
+    //@CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     List<Person> restList() {
@@ -25,7 +25,7 @@ class PersonController {
         personService.findAll()
     }
 
-    @CrossOrigin(origins = "http://localhost:8989")
+    //@CrossOrigin(origins = "http://localhost:8080")
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
@@ -34,7 +34,7 @@ class PersonController {
         personService.save(person)
     }
 
-    @CrossOrigin(origins = "http://localhost:8989")
+    //@CrossOrigin(origins = "http://localhost:8080")
     @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
@@ -43,7 +43,7 @@ class PersonController {
         personService.save(person)
     }
 
-    @CrossOrigin(origins = "http://localhost:8989")
+    //@CrossOrigin(origins = "http://localhost:8080")
     @GetMapping(value = '/{id}',
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
@@ -53,7 +53,7 @@ class PersonController {
         personService.findById(id)
     }
 
-    @CrossOrigin(origins = "http://localhost:8989")
+    //@CrossOrigin(origins = "http://localhost:8080")
     @DeleteMapping(value = '/{id}',
             produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
