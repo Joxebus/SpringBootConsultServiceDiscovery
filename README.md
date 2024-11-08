@@ -37,7 +37,7 @@ $> mvn clean package
 ## Run with docker-compose
 
 ```
-$> docker-compose up --build
+$> docker compose up --build
 ```
 
 - Consul UI manager: `http://localhost:8500/ui/dc1/services`

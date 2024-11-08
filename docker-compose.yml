@@ -13,7 +13,7 @@ services:
     volumes:
       - ./logstash-config:/etc/logstash/conf.d
   consul:
-    image: consul:latest
+    image: hashicorp/consul:latest
     container_name: "dev-consul"
     environment:
       - "CONSUL_BIND_INTERFACE=eth0"
