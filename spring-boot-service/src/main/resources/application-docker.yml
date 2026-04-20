@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: person-service-client
   thymeleaf:
     cache: false
   datasource:

@@ -1,6 +1,7 @@
 spring:
   application:
     name: person-service-client
+    alias: ${SERVICE_ALIAS}
   thymeleaf:
     cache: false
   datasource:

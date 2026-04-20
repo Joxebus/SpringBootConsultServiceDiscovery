@@ -1,6 +1,7 @@
 spring:
   application:
     name: person-front
+    alias: ${SERVICE_ALIAS}
   thymeleaf:
     cache: false
   cloud:
