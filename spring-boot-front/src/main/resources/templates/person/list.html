@@ -30,7 +30,7 @@
         <thead>
             <tr>
                 <th scope="col">Name</th>
-                <th scope="col">Last name</th>
+                <th scope="col">Lastname</th>
                 <th scope="col">Email</th>
                 <th scope="col">Delete</th>
             </tr>
@@ -38,7 +38,7 @@
         <tbody>
             <tr th:each="person : ${listOfPeople}">
                 <td th:text="${person.name}">Name</td>
-                <td th:text="${person.lastName}">Last name</td>
+                <td th:text="${person.lastname}">Lastname</td>
                 <td th:text="${person.email}">Email</td>
                 <td><a th:href="@{/people/delete/{id}(id=${person.id})}" th:text="Delete">Delete</a></td>
 

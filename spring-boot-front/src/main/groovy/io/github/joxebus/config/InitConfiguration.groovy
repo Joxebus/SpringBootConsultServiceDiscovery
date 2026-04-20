@@ -1,4 +1,4 @@
-package com.nearsoft.config
+package io.github.joxebus.config
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.web.client.RestTemplateBuilder

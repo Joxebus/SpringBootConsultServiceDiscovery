@@ -1,7 +1,7 @@
-package com.nearsoft.config
+package io.github.joxebus.config
 
-import com.nearsoft.domain.Person
-import com.nearsoft.service.PersonService
+import io.github.joxebus.domain.Person
+import io.github.joxebus.service.PersonService
 import grails.gorm.transactions.Transactional
 import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Autowired
@@ -32,8 +32,8 @@ class Bootstrap {
         if(!Person.count()){
             log.info "--------- INIT Loading information ---------"
             def persons = [
-                    new Person(name: "Omar", lastName:"Bautista", email:'obautista@email.com'),
-                    new Person(name:"Jorge", lastName:"Valenzuela", email:'jvalenzuela@email.com')
+                    new Person(name: "Omar", lastname:"Bautista", email:'obautista@email.com'),
+                    new Person(name:"Jorge", lastname:"Valenzuela", email:'jvalenzuela@email.com')
             ]
 
             log.info("About to load users: ${persons}")

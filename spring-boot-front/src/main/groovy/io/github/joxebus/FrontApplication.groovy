@@ -1,4 +1,4 @@
-package com.nearsoft
+package io.github.joxebus
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient
  * This is the main class of the project
  */
 
-@SpringBootApplication( scanBasePackages = ['com.nearsoft'], exclude = [SolrAutoConfiguration])
+@SpringBootApplication( scanBasePackages = ['io.github.joxebus'], exclude = [SolrAutoConfiguration])
 @EnableDiscoveryClient
 class FrontApplication {
 

@@ -9,13 +9,13 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>com.nearsoft</groupId>
+        <groupId>io.github.joxebus</groupId>
         <artifactId>consul-example</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
     <properties>
-        <start-class>com.nearsoft.FrontApplication</start-class>
+        <start-class>io.github.joxebus.FrontApplication</start-class>
     </properties>
 
     <dependencies>
@@ -37,7 +37,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.nearsoft</groupId>
+            <groupId>io.github.joxebus</groupId>
             <artifactId>person-common</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

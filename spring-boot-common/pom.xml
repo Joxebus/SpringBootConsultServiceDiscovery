@@ -17,7 +17,7 @@
 
     <parent>
         <artifactId>consul-example</artifactId>
-        <groupId>com.nearsoft</groupId>
+        <groupId>io.github.joxebus</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 

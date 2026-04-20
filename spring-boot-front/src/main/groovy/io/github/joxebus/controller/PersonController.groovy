@@ -1,6 +1,6 @@
-package com.nearsoft.controller
+package io.github.joxebus.controller
 
-import com.nearsoft.domain.Person
+import io.github.joxebus.domain.Person
 import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpEntity
